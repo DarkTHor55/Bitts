@@ -1,0 +1,13 @@
+
+Q
+java:S1066R"/Merge this if statement with the enclosing one.(¢±åûÿÿÿÿ8Çùèœ2
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(÷‰éº
+_
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8ú™›èœ2
+_
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8ú™›èœ2
+d
+java:S2094"BRemove this empty class, write its code or make it an "interface".(¦Á¦¼ıÿÿÿÿ8ş™›èœ2
+o
+java:S3776 "RRefactor this method to reduce its Cognitive Complexity from 40 to the 15 allowed.(¦°–É8Öùèœ2
+L	java:S106e"+Replace this use of System.out by a logger.(ÆÎ±Üûÿÿÿÿ8ßùèœ2
