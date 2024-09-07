@@ -1,10 +1,12 @@
 package com.darkthor.Service.Impl;
 
+import com.darkthor.Configuration.JwtUtils;
 import com.darkthor.Exceptions.EmailNotFoundException;
 import com.darkthor.Exceptions.UserNotFoundException;
 import com.darkthor.Model.User;
 import com.darkthor.Repository.UserRepository;
 import com.darkthor.Request.UserRequest;
+import com.darkthor.Response.LoginRequest;
 import com.darkthor.Service.IUserService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
@@ -20,14 +22,16 @@ import java.util.UUID;
 public class UserServiceImpl implements IUserService {
     private final PasswordEncoder passwordEncoder;
     private final UserRepository userRepository;
+    private final JwtUtils jwtUtils;
     public static final int otp = randomNumber();
     public boolean emailValidation = false;
+
     @Override
     public User createUser(@Valid final UserRequest userRequest) {
 
         if(!isExits(userRequest.getEmail())){
             User user= User.builder()
-                    .userId(UUID.randomUUID().toString())
+                    .userId(generateUniqueId())
                     .firstName(userRequest.getFirstName())
                     .lastName(userRequest.getLastName())
                     .email(userRequest.getEmail())
@@ -81,6 +85,13 @@ public class UserServiceImpl implements IUserService {
     public List<User> getUsers() {
         return userRepository.findAll();
     }
+    public String loginUser(LoginRequest request ){
+        User user = userRepository.findByEmail(request.getEmail());
+        if(user!=null && passwordEncoder.matches(request.getPassword(),user.getPassword())){
+            return jwtUtils.generateToken(user);
+        }
+        return null;
+    }
     public static int randomNumber() {
         Random
                 random = new Random();
@@ -92,5 +103,12 @@ public class UserServiceImpl implements IUserService {
         User user= userRepository.findByEmail(eamil);
         return user!=null;
     }
+    private  static long generateUniqueId() {
+        long currentTimeMillis = System.currentTimeMillis();
+        UUID uuid = UUID.randomUUID();
+        long uuidLeastSigBits = uuid.getLeastSignificantBits();
+        return currentTimeMillis ^ uuidLeastSigBits;
+    }
+
 
 }

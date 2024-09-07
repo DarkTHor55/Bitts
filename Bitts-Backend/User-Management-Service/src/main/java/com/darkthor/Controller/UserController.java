@@ -9,6 +9,8 @@ import com.darkthor.Response.LoginRequest;
 import com.darkthor.Service.Impl.MailService;
 import com.darkthor.Service.Impl.UserServiceImpl;
 import lombok.RequiredArgsConstructor;
+import org.hibernate.internal.util.StringHelper;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -49,10 +51,18 @@ public class UserController {
        }
        return ResponseEntity.badRequest().body("Email validation failed");
     }
-//    @PostMapping("/login")
-//    public ResponseEntity<JwtResponse> loginUser(@RequestBody final LoginRequest request){
-//
-//    }
+    @PostMapping("/login")
+    public ResponseEntity<JwtResponse> loginUser(@RequestBody final LoginRequest request){
+        String token=userService.loginUser(request);
+        System.out.println(token);
+        if (!Objects.isNull(token)){
+            JwtResponse jwtResponse= JwtResponse.builder().token(token).build();
+            return ResponseEntity.ok(jwtResponse);
+        }
+        else {
+            return new ResponseEntity<>(HttpStatus.BAD_GATEWAY);
+        }
+    }
 
 
 }

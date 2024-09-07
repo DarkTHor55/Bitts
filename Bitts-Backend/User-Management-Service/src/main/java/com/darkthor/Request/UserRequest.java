@@ -25,7 +25,6 @@ public class UserRequest {
     @Column(nullable = false)
     private String password;
 
-    @NotBlank(message = "Role ID is required")
-    private Long roleId;
+
 
 }
