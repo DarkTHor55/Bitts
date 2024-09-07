@@ -1,0 +1,14 @@
+
+g	java:S112)"FDefine and throw a dedicated exception instead of using a generic one.(ÒžæÍþÿÿÿÿ8°–™®œ2
+g	java:S112,"FDefine and throw a dedicated exception instead of using a generic one.(Æƒ¦µøÿÿÿÿ8±–™®œ2
+b	java:S112<"FDefine and throw a dedicated exception instead of using a generic one.(Šùð¯8¡«¯œ2
+x
+java:S1104"[Make emailValidation a static final constant or non-public and provide accessors if needed.(¤£”ê8²–™®œ2
+v	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(÷‘ÝŠ8³–™®œ2
+v	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(ªØÝ¼8¸–™®œ2
+N
+java:S1172.",Remove this unused method parameter "email".(ßËý‹ûÿÿÿÿ8ÞÌÖÔœ2
+@
+java:S2119V"Save and re-use this "Random".(Ñå±ýÿÿÿÿ8À–™®œ2
+h
+java:S1128"KRemove this unused import 'com.darkthor.Exceptions.EmailNotFoundException'.(ÎÏÔ£8óÌÖÔœ2
