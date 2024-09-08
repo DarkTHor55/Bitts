@@ -1,13 +1,13 @@
 
-g	java:S112+"FDefine and throw a dedicated exception instead of using a generic one.(ÒæÍşÿÿÿÿ8ğë¨€2
-g	java:S112."FDefine and throw a dedicated exception instead of using a generic one.(Æƒ¦µøÿÿÿÿ8ğë¨€2
-b	java:S112?"FDefine and throw a dedicated exception instead of using a generic one.(Šùğ¯8ğë¨€2
+g	java:S112-"FDefine and throw a dedicated exception instead of using a generic one.(ÒæÍşÿÿÿÿ8ğë¨€2
+g	java:S1120"FDefine and throw a dedicated exception instead of using a generic one.(Æƒ¦µøÿÿÿÿ8ğë¨€2
+b	java:S112A"FDefine and throw a dedicated exception instead of using a generic one.(Šùğ¯8ğë¨€2
 x
-java:S1104"[Make emailValidation a static final constant or non-public and provide accessors if needed.(¤£”ê8ñë¨€2
+java:S1104"[Make emailValidation a static final constant or non-public and provide accessors if needed.(¤£”ê8ñë¨€2
 v	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(÷‘İŠ8òë¨€2
-v	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(ªØİ¼8 ì¨€2
-L	java:S106;"+Replace this use of System.out by a logger.(î¸ıÿÿÿÿ8¦ì¨€2
+v	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(ªØİ¼8 ì¨€2
+L	java:S106="+Replace this use of System.out by a logger.(î¸ıÿÿÿÿ8¦ì¨€2
 :
-java:S2119a"Save and re-use this "Random".(¼İÅf8©ì¨€2
+java:S2119c"Save and re-use this "Random".(¼İÅf8©ì¨€2
 h
-java:S1128"KRemove this unused import 'com.darkthor.Exceptions.EmailNotFoundException'.(ÎÏÔ£8ªì¨€2
+java:S1128"KRemove this unused import 'com.darkthor.Exceptions.EmailNotFoundException'.(ÎÏÔ£8†ŞÛ„2

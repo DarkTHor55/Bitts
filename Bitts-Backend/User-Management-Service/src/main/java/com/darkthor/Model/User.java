@@ -1,12 +1,7 @@
 package com.darkthor.Model;
 
-import jakarta.persistence.Entity;
 import jakarta.persistence.*;
-import jakarta.persistence.Table;
 import lombok.*;
-
-import java.util.List;
-import java.util.Set;
 
 @Setter
 @Getter
@@ -24,5 +19,7 @@ public class User {
     private String email;
     private String password;
 
-
+    @OneToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    @JoinColumn(name = "profile_id")
+    private UserProfile userProfile;
 }

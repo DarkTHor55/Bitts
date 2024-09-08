@@ -1,5 +1,6 @@
 
 {	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ª÷âÁûÿÿÿÿ8œßêêœ2
+L	java:S106-"+Replace this use of System.out by a logger.(ƒøÎ·üÿÿÿÿ8È®õƒ2
 h
 java:S1128"FRemove this unused import 'com.darkthor.Service.Impl.UserServiceImpl'.(©Áî½ÿÿÿÿÿ8üã‘€2
 G

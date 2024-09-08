@@ -4,6 +4,7 @@ import com.darkthor.Configuration.JwtUtils;
 import com.darkthor.Exceptions.EmailNotFoundException;
 import com.darkthor.Exceptions.UserNotFoundException;
 import com.darkthor.Model.User;
+import com.darkthor.Model.UserProfile;
 import com.darkthor.Repository.UserRepository;
 import com.darkthor.Request.OtpValidationRequest;
 import com.darkthor.Request.UserRequest;
@@ -34,6 +35,7 @@ public class UserServiceImpl implements IUserService {
                     .firstName(userRequest.getFirstName())
                     .lastName(userRequest.getLastName())
                     .email(userRequest.getEmail())
+                    .userProfile(new UserProfile())
                     .password(passwordEncoder.encode(userRequest.getPassword()))
                     .build();
             if (emailValidation) {

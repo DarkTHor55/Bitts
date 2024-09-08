@@ -1,19 +1,16 @@
 
 w
-java:S1104"UMake currEmail a static final constant or non-public and provide accessors if needed.(ÓÀÀˆùÿÿÿÿ8ÖÎËÿœ2
+java:S1104"UMake currEmail a static final constant or non-public and provide accessors if needed.(ÓÀÀˆùÿÿÿÿ8ÖÎËÿœ2
 Q
-java:S1444"/Make this "public static currEmail" field final(ÓÀÀˆùÿÿÿÿ8×ÎËÿœ2
+java:S1444"/Make this "public static currEmail" field final(ÓÀÀˆùÿÿÿÿ8×ÎËÿœ2
 v	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(÷‘İŠ8¹ËÊÿœ2
-{	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(åÀ×›ùÿÿÿÿ8ÆËÊÿœ2
+{	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(åÀ×›ùÿÿÿÿ8ÆËÊÿœ2
 _
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8ÆËÊÿœ2
+java:S6813
+"BRemove this field injection and use constructor injection instead.(êæÄŞ8ÆËÊÿœ2
 N
-java:S1481"1Remove this unused "randomNumber" local variable.(¾Á¿»8ÊËÊÿœ2
-L	java:S106"+Replace this use of System.out by a logger.(¼ÿšûûÿÿÿÿ8ÌËÊÿœ2
+java:S1481"1Remove this unused "randomNumber" local variable.(¾Á¿»8ÊËÊÿœ2
+L	java:S106"+Replace this use of System.out by a logger.(¼ÿšûûÿÿÿÿ8ÌËÊÿœ2
 S
-java:S2696"6Make the enclosing method "static" or remove this set.(¨ÖÏí8–¦Ëÿœ2
-G	java:S106 "+Replace this use of System.err by a logger.(Ü£°ë8ÌËÊÿœ2
-[
-java:S1128">Remove this unused import 'jakarta.transaction.Transactional'.(ß–Ê³8ÌËÊÿœ2
-c
-java:S1128"ARemove this unused import 'jakarta.validation.constraints.Email'.(Öï¤Âıÿÿÿÿ8ÌËÊÿœ2
+java:S2696"6Make the enclosing method "static" or remove this set.(¨ÖÏí8–¦Ëÿœ2
+G	java:S106"+Replace this use of System.err by a logger.(Ü£°ë8ÌËÊÿœ2

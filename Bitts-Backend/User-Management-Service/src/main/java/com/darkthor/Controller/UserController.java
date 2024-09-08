@@ -41,7 +41,8 @@ public class UserController {
         return ResponseEntity.ok("OTP sent successfully");
     }
     @GetMapping("/test")
-    public String test(){
+    public String test(@RequestHeader("Authorization") String authorizationHeader){
+        System.out.println(authorizationHeader+"////////////////////////////////////////////////////////////////");
         return "test successfull..";
     }
 
