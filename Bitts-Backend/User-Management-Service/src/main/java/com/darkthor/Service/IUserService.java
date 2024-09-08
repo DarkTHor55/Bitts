@@ -3,6 +3,7 @@ package com.darkthor.Service;
 import com.darkthor.Exceptions.EmailNotFoundException;
 import com.darkthor.Exceptions.UserNotFoundException;
 import com.darkthor.Model.User;
+import com.darkthor.Request.OtpValidationRequest;
 import com.darkthor.Request.UserRequest;
 import com.darkthor.Response.LoginRequest;
 
@@ -15,7 +16,7 @@ public interface IUserService {
     boolean deleteUser (final String email)throws UserNotFoundException;
     List<User> getUsers();
     public String loginUser(LoginRequest request);
-    public boolean isEmailValidated(String email, int newotp);
+    public boolean isEmailValidated(OtpValidationRequest request);
 
 
 

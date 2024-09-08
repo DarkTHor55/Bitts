@@ -48,7 +48,7 @@ public class UserController {
 //    opt validation
     @PostMapping("/otp-validate")
     public ResponseEntity<String> isEmailValidated(@RequestBody final OtpValidationRequest request){
-       boolean res= userService.isEmailValidated(request.getEmail(),request.getOtp());
+       boolean res= userService.isEmailValidated(request);
        if(res){
            return ResponseEntity.ok("Email validated successfully");
        }

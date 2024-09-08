@@ -5,6 +5,7 @@ import com.darkthor.Exceptions.EmailNotFoundException;
 import com.darkthor.Exceptions.UserNotFoundException;
 import com.darkthor.Model.User;
 import com.darkthor.Repository.UserRepository;
+import com.darkthor.Request.OtpValidationRequest;
 import com.darkthor.Request.UserRequest;
 import com.darkthor.Response.LoginRequest;
 import com.darkthor.Service.IUserService;
@@ -25,7 +26,6 @@ public class UserServiceImpl implements IUserService {
 
     public static final int otp = randomNumber();
     public boolean emailValidation = false;
-    public String currEmail=MailService.currEmail;
     @Override
     public User createUser(UserRequest userRequest) {
         if (!isExits(userRequest.getEmail())) {
@@ -46,8 +46,8 @@ public class UserServiceImpl implements IUserService {
         throw new RuntimeException("Email Already Exists");
     }
     @Override
-    public boolean isEmailValidated(String email, int newotp) {
-        if (otp == newotp&&email.equals(currEmail)) {
+    public boolean isEmailValidated(OtpValidationRequest request) {
+        if (otp == request.getOtp()&&request.getEmail().equals(MailService.currEmail)) {
             emailValidation = true;
             return true;
         }
@@ -56,6 +56,7 @@ public class UserServiceImpl implements IUserService {
 
     @Override
     public User getUserByEmail(String email) {
+        System.out.println(email);
         if (isExits(email)) {
             return userRepository.findByEmail(email);
         } else {

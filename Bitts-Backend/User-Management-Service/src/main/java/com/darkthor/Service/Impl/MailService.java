@@ -13,7 +13,7 @@ import org.springframework.stereotype.Service;
     @Autowired
     private JavaMailSender mailSender;
     private static final int otp = UserServiceImpl.otp;
-    public static  String currEmail="";
+    public static  String currEmail=null;
 
     public void sendEmail(final String email) {
         final String subject= "Email Varification from Bitts" ;
