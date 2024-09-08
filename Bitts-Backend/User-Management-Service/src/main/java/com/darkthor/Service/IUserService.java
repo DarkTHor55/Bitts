@@ -4,6 +4,7 @@ import com.darkthor.Exceptions.EmailNotFoundException;
 import com.darkthor.Exceptions.UserNotFoundException;
 import com.darkthor.Model.User;
 import com.darkthor.Request.UserRequest;
+import com.darkthor.Response.LoginRequest;
 
 import java.util.List;
 
@@ -13,6 +14,8 @@ public interface IUserService {
     User updateUser (final Long userId,final UserRequest userRequest);
     boolean deleteUser (final String email)throws UserNotFoundException;
     List<User> getUsers();
+    public String loginUser(LoginRequest request);
+    public boolean isEmailValidated(String email, int newotp);
 
 
 

@@ -1,4 +1,4 @@
 
-{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(´¨æÊúÿÿÿÿ8ñÕ‘áœ2
-m	java:S116"QRename this field "SECRET" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(–Þ‰½8ý³—áœ2
-X	java:S125+"<This block of commented-out lines of code should be removed.(»ã‰ö8þÕ‘áœ2
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(´¨æÊúÿÿÿÿ8Þ©ßýœ2
+m	java:S116"QRename this field "SECRET" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(–Þ‰½8ë©ßýœ2
+X	java:S125+"<This block of commented-out lines of code should be removed.(»ã‰ö8ñ©ßýœ2

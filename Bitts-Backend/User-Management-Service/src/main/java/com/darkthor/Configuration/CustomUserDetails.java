@@ -5,23 +5,25 @@ import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
-import java.util.ArrayList;
 import java.util.Collection;
+import java.util.Collections;
 import java.util.List;
 
 public class CustomUserDetails implements UserDetails {
     private static final long serialVersionUID = 1L;
-    private String email;
-    private String password;
-    private List<GrantedAuthority> authorities;
+    private final String email;
+    private final String password;
+    private final List<GrantedAuthority> authorities;
 
-    // Constructor with null check
+    // Constructor
     public CustomUserDetails(User user) {
         if (user == null) {
             throw new IllegalArgumentException("User cannot be null");
         }
         this.email = user.getEmail();
         this.password = user.getPassword();
+        // Example role; replace with actual role logic if needed
+        this.authorities = Collections.singletonList(new SimpleGrantedAuthority("ROLE_USER"));
     }
 
     @Override

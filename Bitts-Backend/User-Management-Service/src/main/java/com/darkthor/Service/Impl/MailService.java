@@ -8,12 +8,12 @@ import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.stereotype.Service;
 
 @Service
-@Transactional
     public class MailService {
 
     @Autowired
     private JavaMailSender mailSender;
     private static final int otp = UserServiceImpl.otp;
+    public static  String currEmail="";
 
     public void sendEmail(final String email) {
         final String subject= "Email Varification from Bitts" ;
@@ -27,6 +27,7 @@ import org.springframework.stereotype.Service;
             message.setSubject(subject);
             mailSender.send(message);
             System.out.println("Mail sent successfully." + otp);
+            currEmail=email;
         } catch (Exception e) {
             System.err.println("Error sending email: " + e.getMessage());
             e.printStackTrace();

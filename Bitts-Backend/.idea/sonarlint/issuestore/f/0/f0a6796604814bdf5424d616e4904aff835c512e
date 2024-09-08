@@ -1,10 +1,11 @@
 
-t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Å‘°–ÿÿÿÿÿ
-r	java:S116"QRename this field "SCRECT" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ôùëúÿÿÿÿ8óÿ†èœ2
-]	java:S125"<This block of commented-out lines of code should be removed.(•¶€×øÿÿÿÿ8¯ç‹èœ2
-X	java:S125""<This block of commented-out lines of code should be removed.(»ã‰ö8ß­ıçœ2
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Å‘°–ÿÿÿÿÿ8”å”ìœ2
+r	java:S116"QRename this field "SCRECT" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ôùëúÿÿÿÿ8å”ìœ2
+]	java:S125"<This block of commented-out lines of code should be removed.(•¶€×øÿÿÿÿ8 å”ìœ2
+X	java:S125"<This block of commented-out lines of code should be removed.(·ÔÑ¦8¢å”ìœ2
+X	java:S125""<This block of commented-out lines of code should be removed.(»ã‰ö8¤å”ìœ2
 P
 java:S1128
-"3Remove this unused import 'javax.crypto.SecretKey'.(±•¸×8à­ıçœ2
+"3Remove this unused import 'javax.crypto.SecretKey'.(±•¸×8¥å”ìœ2
 H
-java:S1128"+Remove this unused import 'java.util.Date'.(¸…¼ü8à­ıçœ2
+java:S1128"+Remove this unused import 'java.util.Date'.(¸…¼ü8¥å”ìœ2

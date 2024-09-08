@@ -1,8 +1,12 @@
 
 E
-java:S5411"(Use a primitive boolean expression here.(Ðª•ƒ8œÜýáœ2
+java:S5411"(Use a primitive boolean expression here.(Ðª•ƒ8Å›¡ÿœ2
 {	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(´¨æÊúÿÿÿÿ8ë¨ýáœ2
 _
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄÞ8 Üýáœ2
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄÞ8Ì›¡ÿœ2
 _
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄÞ8 Üýáœ2
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄÞ8Í›¡ÿœ2
+V
+java:S1128"4Remove this unused import 'com.darkthor.Model.User'.(ÌŸ£¹ùÿÿÿÿ8Ñ›¡ÿœ2
+[
+java:S1128">Remove this unused import 'com.darkthor.Service.IUserService'.(ó»âþ8Ñ›¡ÿœ2

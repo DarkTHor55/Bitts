@@ -6,16 +6,15 @@ import com.darkthor.Request.OtpValidationRequest;
 import com.darkthor.Request.UserRequest;
 import com.darkthor.Response.JwtResponse;
 import com.darkthor.Response.LoginRequest;
+import com.darkthor.Service.IUserService;
 import com.darkthor.Service.Impl.MailService;
 import com.darkthor.Service.Impl.UserServiceImpl;
+import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import org.hibernate.internal.util.StringHelper;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.Objects;
 
@@ -23,7 +22,7 @@ import java.util.Objects;
 @RequestMapping(value = "/api/v1/user")
 @RequiredArgsConstructor
 public class UserController {
-    private final UserServiceImpl userService;
+    private final IUserService userService;
     private final MailService mailService;
 
 //    Sign Up
@@ -41,6 +40,10 @@ public class UserController {
         mailService.sendEmail(request.getEmail());
         return ResponseEntity.ok("OTP sent successfully");
     }
+    @GetMapping("/test")
+    public String test(){
+        return "test successfull..";
+    }
 
 //    opt validation
     @PostMapping("/otp-validate")
@@ -52,15 +55,14 @@ public class UserController {
        return ResponseEntity.badRequest().body("Email validation failed");
     }
     @PostMapping("/login")
-    public ResponseEntity<JwtResponse> loginUser(@RequestBody final LoginRequest request){
-        String token=userService.loginUser(request);
-        System.out.println(token);
-        if (!Objects.isNull(token)){
-            JwtResponse jwtResponse= JwtResponse.builder().token(token).build();
+    public ResponseEntity<JwtResponse> loginUser(@RequestBody final LoginRequest request) {
+        String token = userService.loginUser(request);
+
+        if (token != null && !token.isEmpty()) {
+            JwtResponse jwtResponse = new JwtResponse(token);
             return ResponseEntity.ok(jwtResponse);
-        }
-        else {
-            return new ResponseEntity<>(HttpStatus.BAD_GATEWAY);
+        } else {
+            return new ResponseEntity<>(HttpStatus.UNAUTHORIZED);  // Use UNAUTHORIZED for invalid credentials
         }
     }
 

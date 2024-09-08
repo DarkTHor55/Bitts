@@ -1,4 +1,6 @@
 
-{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(´¨æÊúÿÿÿÿ8’„“âœ2
-[
-java:S1612">Replace this lambda with method reference 'CsrfSpec::disable'.(÷ÃÆâ8š„“âœ2
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(´¨æÊúÿÿÿÿ8­¼„ÿœ2
+h
+java:S1128"FRemove this unused import 'com.darkthor.Service.Impl.UserServiceImpl'.(©Áî½ÿÿÿÿÿ8•óÖÿœ2
+z
+java:S1128"]Remove this unused import 'org.springframework.security.core.userdetails.UserDetailsService'.(¶…¥à8œÀ×ÿœ2
