@@ -11,10 +11,7 @@ import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
-import java.util.Date;
-import java.util.List;
-import java.util.Objects;
-import java.util.Optional;
+import java.util.*;
 
 @Service
 @Slf4j
@@ -30,6 +27,7 @@ public class PostServiceImpl implements IPostService {
                 .content(post.getContent())
                 .userId(userId)
                 .createdAt(new Date())
+                .comments(new ArrayList<>())
                 .build();
         return postRepository.save(newPost);
     }

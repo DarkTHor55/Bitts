@@ -1,4 +1,6 @@
 
-t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ª÷âÁûÿÿÿÿ
-]
-java:S2094"BRemove this empty class, write its code or make it an "interface".(õß”òüÿÿÿÿ
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ª÷âÁûÿÿÿÿ8 À¸Š¦2
+C
+java:S1452"&Remove usage of generic wildcard type.(ÈÔ‡8¥À¸Š¦2
+H
+java:S14523"&Remove usage of generic wildcard type.(€›ş™úÿÿÿÿ8©À¸Š¦2

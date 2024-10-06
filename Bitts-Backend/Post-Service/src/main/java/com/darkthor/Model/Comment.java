@@ -1,6 +1,7 @@
 package com.darkthor.Model;
 
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -15,14 +16,12 @@ public class Comment {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long commentId;
-
-    private Long userId; // The ID of the user who commented
-
+    private Long userId;
     @Lob
-    private String content; // The comment content
-
+    private String content;
     @ManyToOne
     @JoinColumn(name = "post_id", referencedColumnName = "postId")
-    private Post post; // The post that was commented on
+    @JsonIgnore
+    private Post post;
 }
 
