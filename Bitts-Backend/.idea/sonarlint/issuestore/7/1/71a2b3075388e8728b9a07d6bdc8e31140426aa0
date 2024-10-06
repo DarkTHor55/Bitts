@@ -1,0 +1,13 @@
+
+m	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(û™·è8ž¯™†¦2
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ª÷âÁûÿÿÿÿ8Ÿ¯™†¦2
+V
+java:S1854"9Remove this useless assignment to local variable "email".(àä”ò8„žì‡¦2
+\
+java:S1854":Remove this useless assignment to local variable "userId".(Äüæþþÿÿÿÿ8„žì‡¦2
+G
+java:S1481"*Remove this unused "email" local variable.(­ÁÇž8‡žì‡¦2
+M
+java:S1481"+Remove this unused "userId" local variable.(Äüæþþÿÿÿÿ8ˆžì‡¦2
+]
+java:S1128"@Remove this unused import 'javax.swing.text.html.parser.Entity'.(Û‡Ð‘8“õÁ‡¦2

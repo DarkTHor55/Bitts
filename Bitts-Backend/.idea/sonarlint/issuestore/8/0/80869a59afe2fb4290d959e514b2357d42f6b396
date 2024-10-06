@@ -1,0 +1,12 @@
+
+a	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(§ºÜu8óÕ²‡¦2
+a	java:S112("FDefine and throw a dedicated exception instead of using a generic one.(è­‰~8ôÕ²‡¦2
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(²£ìæüÿÿÿÿ
+K
+java:S1874".Remove this use of "parser"; it is deprecated.(¹Ñº¹8ˆÖ²‡¦2
+W
+java:S1874"5Remove this use of "setSigningKey"; it is deprecated.(Ã¡û„ùÿÿÿÿ8ˆÖ²‡¦2
+h
+java:S6201#"FReplace this instanceof check and cast with 'instanceof String string'(ŠÅÕÇùÿÿÿÿ8Ö²‡¦2
+h
+java:S6201%"FReplace this instanceof check and cast with 'instanceof Number number'(Ç¶áŒüÿÿÿÿ8Ö²‡¦2

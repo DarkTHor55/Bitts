@@ -50,6 +50,7 @@
         <module>Eureka-Server</module>
         <module>User-Management-Service</module>
         <module>Api-Gateway</module>
+        <module>Post-Service</module>
     </modules>
 
 </project>

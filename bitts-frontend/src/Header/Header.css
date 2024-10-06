@@ -1,0 +1,136 @@
+Full-page container for layout
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: 'Arial', sans-serif;
+}
+
+.header {
+  background: linear-gradient(90deg, #2c2c2c, #1f1f1f); /* Dark grey to darker grey */
+  color: white;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header .logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.header nav {
+  display: flex;
+  gap: 20px;
+}
+
+.header nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1rem;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease;
+}
+
+.header nav a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+}
+
+/* Adjust gap between CTA buttons */
+.cta-wrapper {
+  position: relative;
+}
+
+.header .cta {
+  background-color: #555; /* Grey */
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.header .cta:hover {
+  background-color: #777; /* Lighter grey */
+}
+
+/* Dropdown */
+.dropdown {
+  position: absolute;
+  top: 60px; /* Position below the header */
+  right: 0;
+  background-color: #333;
+  color: white;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  z-index: 1000;
+}
+
+.dropdown a {
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.dropdown a:hover {
+  background-color: #555;
+}
+
+/* Content below header */
+.main-content {
+  padding-top: 60px; /* Ensure content starts below the fixed header */
+  min-height: calc(100vh - 60px); /* Full screen minus header height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f4f9; /* Light grey background */
+}
+
+.main-content h1 {
+  font-size: 3rem;
+  color: #333;
+  text-align: center;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+  }
+
+  .header nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .main-content h1 {
+    font-size: 2rem;
+  }
+
+  .cta-wrapper {
+    flex-direction: column; /* Stacks buttons vertically on mobile */
+    gap: 10px;
+    margin-top: 10px;
+  }
+}

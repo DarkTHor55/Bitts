@@ -4,8 +4,3 @@ r	java:S116"QRename this field "SCRECT" to match the regular expression '^[a-
 ]	java:S125"<This block of commented-out lines of code should be removed.(•¶€×øÿÿÿÿ8 å”ìœ2
 X	java:S125"<This block of commented-out lines of code should be removed.(·ÔÑ¦8¢å”ìœ2
 X	java:S125""<This block of commented-out lines of code should be removed.(»ã‰ö8¤å”ìœ2
-P
-java:S1128
-"3Remove this unused import 'javax.crypto.SecretKey'.(±•¸×8¥å”ìœ2
-H
-java:S1128"+Remove this unused import 'java.util.Date'.(¸…¼ü8¥å”ìœ2

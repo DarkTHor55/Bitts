@@ -1,0 +1,136 @@
+/* Profile Container */
+.profile-container {
+    max-width: 100%; /* Use full screen width */
+    width: 100%; /* Ensure it takes the full width of the parent */
+    margin: 20px; /* Remove auto to avoid centering */
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Profile Header */
+.profile-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 30px; /* Added more spacing */
+}
+
+.profile-photo {
+    width: 150px; /* Increased profile photo size */
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ddd;
+}
+
+h1 {
+    font-size: 2.5rem; /* Increased font size for header */
+    color: #333;
+    margin: 0;
+}
+
+/* Profile Details */
+.profile-details {
+    margin-top: 20px;
+    flex-grow: 1; /* Make details take up available space */
+}
+
+.profile-bio, .profile-skills, .profile-links {
+    margin-bottom: 30px; /* Added more spacing between sections */
+}
+
+h2 {
+    font-size: 1.8rem; /* Increased font size for section titles */
+    color: #3498db;
+    margin-bottom: 10px;
+}
+
+.profile-bio p, .profile-skills p {
+    font-size: 1.2rem; /* Slightly larger text for bio and skills */
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Editing Inputs */
+textarea, input {
+    width: 100%;
+    padding: 12px; /* Increased padding for inputs */
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 1.1rem; /* Slightly larger text */
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+textarea {
+    height: 120px; /* Slightly larger height */
+    resize: vertical;
+}
+
+/* Profile Links */
+.profile-links a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.profile-links a:hover {
+    text-decoration: underline;
+}
+
+/* Profile Actions */
+.profile-actions {
+    display: flex;
+    gap: 10px;
+    justify-content: center; /* Center buttons */
+}
+
+.profile-actions button {
+    padding: 12px 20px; /* Increased padding for buttons */
+    border: none;
+    border-radius: 5px;
+    background-color: #3498db;
+    color: white;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.profile-actions button:hover {
+    background-color: rgba(41, 128, 185, 0.9);
+    transform: translateY(-2px);
+}
+
+.profile-actions button + button {
+    background-color: #e74c3c;
+}
+
+.profile-actions button + button:hover {
+    background-color: rgba(231, 76, 60, 0.9);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .profile-container {
+        width: 100%;
+    }
+
+    .profile-photo {
+        width: 120px; /* Reduced size on smaller screens */
+        height: 120px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+}

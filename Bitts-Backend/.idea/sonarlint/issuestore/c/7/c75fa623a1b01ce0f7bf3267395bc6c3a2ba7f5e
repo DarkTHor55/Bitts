@@ -10,4 +10,4 @@ L	java:S106="+Replace this use of System.out by a logger.(î¸ıÿÿÿÿ8¦ì¨€2
 :
 java:S2119c"Save and re-use this "Random".(¼İÅf8©ì¨€2
 h
-java:S1128"KRemove this unused import 'com.darkthor.Exceptions.EmailNotFoundException'.(ÎÏÔ£8†ŞÛ„2
+java:S1128"KRemove this unused import 'com.darkthor.Exceptions.EmailNotFoundException'.(ÎÏÔ£8´±÷†¦2
