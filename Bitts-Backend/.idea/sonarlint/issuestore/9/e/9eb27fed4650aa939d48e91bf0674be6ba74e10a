@@ -1,0 +1,20 @@
+
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ª÷âÁûÿÿÿÿ8ºìÑ‰¦2
+V
+java:S1854$"9Remove this useless assignment to local variable "email".(àä”ò8¿ìÑ‰¦2
+H
+java:S1452"&Remove usage of generic wildcard type.(Æš¸ıÿÿÿÿ8ÀìÑ‰¦2
+G
+java:S1481!"*Remove this unused "email" local variable.(­ÁÇ8ÁìÑ‰¦2
+V
+java:S18546"9Remove this useless assignment to local variable "email".(àä”ò8íĞæ‰¦2
+H
+java:S1452-"&Remove usage of generic wildcard type.(×¯üÿÿÿÿ8í¦ç‰¦2
+G
+java:S14813"*Remove this unused "email" local variable.(­ÁÇ8îĞæ‰¦2
+V
+java:S1128"4Remove this unused import 'com.darkthor.Model.Post'.(šÃ÷ïúÿÿÿÿ8î¦ç‰¦2
+Q
+java:S1128"/Remove this unused import 'jakarta.ws.rs.Path'.(·Ñé‚úÿÿÿÿ8î¦ç‰¦2
+K
+java:S1128".Remove this unused import 'java.util.Objects'.(¼¸õ›8î¦ç‰¦2

@@ -153,3 +153,13 @@ y
 IPost-Service/src/main/java/com/darkthor/Service/Impl/PostServiceImpl.java,9/2/929c6920b51156c056fcecbd9dd4907e2ca23c0c
 q
 APost-Service/src/main/java/com/darkthor/Service/IPostService.java,0/6/06b7d0bb2d68f9b5c16e18a104f5ea2fe2d56f37
+v
+FPost-Service/src/main/java/com/darkthor/Controller/LikeController.java,9/e/9eb27fed4650aa939d48e91bf0674be6ba74e10a
+y
+IPost-Service/src/main/java/com/darkthor/Controller/CommentController.java,7/e/7efdad355f88a7acad74609f4b7496eb82dd0ff7
+w
+GPost-Service/src/main/java/com/darkthor/Controller/MergeController.java,3/b/3b22ec28ebca5b519213b962010db0b05b185bca
+q
+APost-Service/src/main/java/com/darkthor/Service/ILikeService.java,d/c/dc2924791079ba11b1925fbaf2d366f9a8dbf186
+y
+IPost-Service/src/main/java/com/darkthor/Service/Impl/LikeServiceImpl.java,4/3/4316eb0a419e93e276f0dc1bc17d99cdfbee7b50

@@ -1,6 +1,7 @@
 package com.darkthor.Model;
 
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -18,5 +19,6 @@ public class Like {
     private Long userId; // The ID of the user who liked the post
     @ManyToOne
     @JoinColumn(name = "post_id", referencedColumnName = "postId")
+    @JsonIgnore
     private Post post; // The post that was liked
 }

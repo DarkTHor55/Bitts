@@ -56,7 +56,7 @@ public class PostController {
             return new ResponseEntity<>("Post deleted", HttpStatus.OK);
         else{
             return new ResponseEntity<>("Failed to delete post", HttpStatus.NOT_FOUND);
-
+        }
     }
 
 
