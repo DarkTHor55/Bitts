@@ -8,9 +8,9 @@ import java.util.List;
 import java.util.Optional;
 
 public interface IPostService {
-    public Post createPost(PostRequest post,Long userId);
+    public Post createPost(final PostRequest post,final Long userId);
     public List<Post> getAllPosts() ;
-    public Optional<Post> getPostById(Long postId) ;
-    public boolean deletePost(Long postId);
+    public Optional<Post> getPostById(final Long postId) ;
+    public boolean deletePost(final Long postId);
 }
 

@@ -21,7 +21,7 @@ public class PostServiceImpl implements IPostService {
 
 
     @Override
-    public Post createPost(PostRequest post,Long userId) {
+    public Post createPost(final PostRequest post,final Long userId) {
         Post newPost = Post.builder()
                 .title(post.getTitle())
                 .content(post.getContent())
@@ -37,12 +37,11 @@ public class PostServiceImpl implements IPostService {
     }
 
     @Override
-    public Optional<Post> getPostById(Long postId) {
+    public Optional<Post> getPostById(final Long postId) {
         return postRepository.findById(postId);
     }
-
     @Override
-    public boolean deletePost(Long postId) {
+    public boolean deletePost(final Long postId) {
        Post p = postRepository.findById(postId).orElse(null);
        if(!Objects.isNull(p)){
            postRepository.deleteById(postId);
