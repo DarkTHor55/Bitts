@@ -1,7 +1,0 @@
-
-a	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(ÿÅª8®†¦2
-t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(²£ìæüÿÿÿÿ
-K
-java:S1874".Remove this use of "parser"; it is deprecated.(¹Ñº¹8¥®†¦2
-W
-java:S1874"5Remove this use of "setSigningKey"; it is deprecated.(Ã¡û„ùÿÿÿÿ8¥®†¦2

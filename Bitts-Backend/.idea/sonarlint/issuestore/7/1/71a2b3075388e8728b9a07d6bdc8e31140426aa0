@@ -1,8 +1,6 @@
 
-{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ª÷âÁûÿÿÿÿ8Åà¶ˆ¦2
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ª÷âÁûÿÿÿÿ8Šœß¤¦2
 V
-java:S1854!"9Remove this useless assignment to local variable "email".(àä”ò8Ôà¶ˆ¦2
+java:S1854!"9Remove this useless assignment to local variable "email".(àä”ò8™œß¤¦2
 G
-java:S1481"*Remove this unused "email" local variable.(­ÁÇ8Öà¶ˆ¦2
-]
-java:S1128"@Remove this unused import 'javax.swing.text.html.parser.Entity'.(Û‡Ğ‘8Ùà¶ˆ¦2
+java:S1481"*Remove this unused "email" local variable.(­ÁÇ8›œß¤¦2

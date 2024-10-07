@@ -42,10 +42,15 @@ public class PostServiceImpl implements IPostService {
         return postRepository.findById(postId);
     }
     @Override
-    public boolean deletePost(final Long postId) {
+    public boolean deletePost(final Long postId,final long userId) {
        Post p = postRepository.findById(postId).orElse(null);
        if(!Objects.isNull(p)){
-           postRepository.deleteById(postId);
+           if(p.getUserId().equals(userId)){
+               postRepository.deleteById(postId);
+           }else{
+               log.error("User does not have permission to delete post with id: {}", postId);
+               return false;
+           }
            return true;
        }
        else{

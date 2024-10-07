@@ -49,7 +49,6 @@ public class CommentController {
 
     @DeleteMapping("/{commentId}")
     public ResponseEntity<?> deleteComment(@PathVariable("commentId") Long commentId, HttpServletRequest request) {
-        // Extract userId from JWT token
         String authHeader = request.getHeader("Authorization");
         if (authHeader == null || !authHeader.startsWith("Bearer ")) {
             return new ResponseEntity<>("Authorization header is missing or invalid", HttpStatus.UNAUTHORIZED);

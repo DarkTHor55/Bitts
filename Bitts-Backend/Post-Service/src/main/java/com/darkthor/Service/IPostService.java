@@ -11,6 +11,6 @@ public interface IPostService {
     public Post createPost(final PostRequest post,final Long userId);
     public List<Post> getAllPosts() ;
     public Optional<Post> getPostById(final Long postId) ;
-    public boolean deletePost(final Long postId);
+    public boolean deletePost(final Long postId,final long userId);
 }
 

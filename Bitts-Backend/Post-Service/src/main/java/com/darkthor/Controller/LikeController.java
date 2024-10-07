@@ -30,10 +30,8 @@ public class LikeController {
             return new ResponseEntity<>("Authorization header is missing or invalid", HttpStatus.UNAUTHORIZED);
         }
         String token = authHeader.substring(7);
-        String email;
         Long userId;
         try {
-            email = jwtUtil.extractUsername(token);
             userId = jwtUtil.extractUserId(token);
         } catch (RuntimeException e) {
             return new ResponseEntity<>("Invalid JWT Token: " + e.getMessage(), HttpStatus.UNAUTHORIZED);
@@ -48,10 +46,8 @@ public class LikeController {
             return new ResponseEntity<>("Authorization header is missing or invalid", HttpStatus.UNAUTHORIZED);
         }
         String token = authHeader.substring(7);
-        String email;
         Long userId;
         try {
-            email = jwtUtil.extractUsername(token);
             userId = jwtUtil.extractUserId(token);
         } catch (RuntimeException e) {
             return new ResponseEntity<>("Invalid JWT Token: " + e.getMessage(), HttpStatus.UNAUTHORIZED);

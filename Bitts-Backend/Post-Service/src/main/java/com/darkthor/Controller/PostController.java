@@ -51,8 +51,19 @@ public class PostController {
         return postService.getPostById(postId).map(ResponseEntity::ok).orElseGet(() -> new ResponseEntity<>(HttpStatus.NOT_FOUND));
     }
     @DeleteMapping("/{postId}")
-    public ResponseEntity<String> deletePost(@PathVariable Long postId){
-        if(postService.deletePost(postId))
+    public ResponseEntity<String> deletePost(@PathVariable final Long postId,final HttpServletRequest request ){
+        String authHeader = request.getHeader("Authorization");
+        if (authHeader == null || !authHeader.startsWith("Bearer ")) {
+            return new ResponseEntity<>("Authorization header is missing or invalid", HttpStatus.UNAUTHORIZED);
+        }
+        String token = authHeader.substring(7);
+        Long userId;
+        try {
+            userId = jwtUtil.extractUserId(token);
+        } catch (RuntimeException e) {
+            return new ResponseEntity<>("Invalid JWT Token: " + e.getMessage(), HttpStatus.UNAUTHORIZED);
+        }
+        if(postService.deletePost(postId,userId))
             return new ResponseEntity<>("Post deleted", HttpStatus.OK);
         else{
             return new ResponseEntity<>("Failed to delete post", HttpStatus.NOT_FOUND);
